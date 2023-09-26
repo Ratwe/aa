@@ -1,0 +1,11 @@
+﻿  menu.cpp
+D:\Code\Github\aa\lab_01\src\lab_01\menu.cpp(40,39): warning C4244: инициализация: преобразование "unsigned __int64" в "double", возможна потеря данных
+D:\Code\Github\aa\lab_01\src\lab_01\menu.cpp(47,32): warning C4244: инициализация: преобразование "unsigned __int64" в "double", возможна потеря данных
+D:\Code\Github\aa\lab_01\src\lab_01\menu.cpp(52,88): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Code\Github\aa\lab_01\src\lab_01\menu.cpp(52,69): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Code\Github\aa\lab_01\src\lab_01\menu.cpp(55,48): warning C4244: инициализация: преобразование "unsigned __int64" в "double", возможна потеря данных
+D:\Code\Github\aa\lab_01\src\lab_01\menu.cpp(60,93): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Code\Github\aa\lab_01\src\lab_01\menu.cpp(60,74): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Code\Github\aa\lab_01\src\lab_01\menu.cpp(63,53): warning C4244: инициализация: преобразование "unsigned __int64" в "double", возможна потеря данных
+  LINK : не найден или не выполнена сборка D:\Code\Github\aa\lab_01\src\lab_01\x64\Debug\lab_01.exe при последней инкрементной компоновке; выполняется полная компоновка
+  lab_01.vcxproj -> D:\Code\Github\aa\lab_01\src\lab_01\x64\Debug\lab_01.exe
