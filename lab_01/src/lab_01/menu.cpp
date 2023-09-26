@@ -87,4 +87,3 @@ int greetings() {
     else
         return normal_mode();
 }
-    
