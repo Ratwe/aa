@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 daa21u263/
 *.lnk
 lab_0*/*.lnk
@@ -9,6 +10,9 @@ lab_0*/daa21u263/
 >>>>>>> df027b8 (first commit)
 =======
 lab_0*/daa21u263/
+=======
+daa21u263/
+>>>>>>> 3b5103a (lab_01 almost passed)
 *.lnk
 lab_0*/*.lnk
 >>>>>>> afc31aa (removed git in lab_01)
