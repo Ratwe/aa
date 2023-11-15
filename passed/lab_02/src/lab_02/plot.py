@@ -34,4 +34,16 @@ def plot_data(file_path, y_label):
     plt.show()
 
 
+<<<<<<< HEAD
 plot_data("time.csv", "Время (тактов) ∙ 10\u2076")
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+plot_data("time.csv", "Время (тактов) ∙ 10\u2076")
+=======
+plot_data("memory.csv", "Объём памяти (байт)")
+>>>>>>> 7ad89dc (lab_02 almost passed)
+=======
+plot_data("time.csv", "Время (тактов) ∙ 10\u2076")
+>>>>>>> af69c2c (lab_02 passed)
+>>>>>>> fb5d8bb (lab_02 passed)
