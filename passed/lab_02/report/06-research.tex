@@ -37,7 +37,7 @@
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.9\linewidth]{../../daa21u263/lab_02/src/lab_02/timefull}
+	\includegraphics[width=0.9\linewidth]{../src/lab_02/timefull}
 	\caption{Время выполнения алгоритмов}
 	\label{fig:timefull}
 \end{figure}
@@ -46,7 +46,7 @@
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.9\linewidth]{../../daa21u263/lab_02/src/lab_02/time}
+	\includegraphics[width=0.9\linewidth]{../src/lab_02/time}
 	\caption{Время выполнения алгоритмов (без учёта алгоритма Штрассена)}
 	\label{fig:time}
 \end{figure}
@@ -54,6 +54,9 @@
 В половине случаев оптимизированная версия алгоритма Винограда работает дольше, чем \textit{обычный} алгоритм Винограда.
 
 В результате трансляции кода программы на язык ассемблера, было замечено следующее: дизассемблированная строка исходного кода, выполняющая операцию вычисления значения \code{row[i]}, при оптимизированной реализации алгоритма Винограда содержит инструкции \code{lea} и \code{movsxd}, из-за чего количество выполняемых команд становится больше, чем в \textit{обычном} алгоритме Винограда.
+
+Количество команд и, следовательно, разность в количестве инструкций также увеличивается при нечётном размере матриц.
+Поэтому на графике заметны выбросы во времени у оптимизированного алгоритма Винограда.
 
 Поэтому время выполнения увеличивается.
 
@@ -66,7 +69,7 @@
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.9\linewidth]{../../daa21u263/lab_02/src/lab_02/memory}
+	\includegraphics[width=0.9\linewidth]{../src/lab_02/memory}
 	\caption{Объём памяти, используемый алгоритмами}
 	\label{fig:memory}
 \end{figure}

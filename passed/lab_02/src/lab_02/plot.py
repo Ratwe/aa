@@ -34,4 +34,4 @@ def plot_data(file_path, y_label):
     plt.show()
 
 
-plot_data("memory.csv", "Объём памяти (байт)")
+plot_data("time.csv", "Время (тактов) ∙ 10\u2076")
