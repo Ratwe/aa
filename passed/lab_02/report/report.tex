@@ -1,0 +1,47 @@
+\documentclass[practic, labs]{BMSTU-IU7}
+
+\usepackage{biblatex}
+\usepackage{listings}
+\usepackage{csvsimple}
+\usepackage{caption}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.9}
+
+\usepackage{geometry}
+\geometry{verbose,a4paper,bmargin=2cm}
+
+\newcommand{\code}[1]{\texttt{#1}}
+
+\lstset{
+	language=C++,
+	numbers=left,
+	captionpos=t,
+	frame=single,  % Отображение рамки вокруг кода
+	backgroundcolor=\color{white}
+}
+
+\student{Дьяченко А. А.}
+\group{ИУ7-53Б}
+\labsNumber{2}
+\theme{<<Умножение матриц (сложность)>>}
+\speciality{<<Анализ алгоритмов>>}
+\supervisor{Строганов Д. В.}
+
+\addbibresource{biblio.bib}
+
+
+\begin{document}
+	\maketitle
+
+	\include{01-contents}
+	\include{02-intro}
+	\include{03-analysis}
+	\include{04-design}
+	\include{05-techn}
+	\include{06-research}
+	\include{07-end}
+
+	\printbibliography
+	
+	
+\end{document}

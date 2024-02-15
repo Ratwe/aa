@@ -1,0 +1,82 @@
+\section{Технологическая часть}
+В данном разделе приведены требования к программному обеспечению, средства реализации и листинги кода.
+
+\subsection{Требования к ПО}
+На вход подаются две матрицы.
+На выходе требуется получить результирующую матрицу -- произведение двух введённых.
+
+\subsection{Средства реализации}
+
+В качестве языка программирования для реализации лабораторной работы был выбран С++.
+Данный выбор обусловлен наличием инструкции \cite{microsoft_rdtsc} для замера количества тактов и поддержкой ООП.
+
+\subsection{Сведения о модулях программы}
+Программа состоит из трех программных модулей:
+\begin{enumerate}[label={\arabic*)}]
+	\item main.cpp -- главный модуль программы, содержащий меню;
+	\item algo.cpp, algo.h -- модуль с реализацией алгоритмов;
+	\item io\_matrix.cpp, io\_matrix.h -- модуль ввода/вывода матриц;
+	\item time.cpp, time.h -- модуль замера времени работы алгоритмов.
+\end{enumerate}
+
+\newpage
+
+
+
+\subsection{Реализация алгоритмов}
+
+В листингe \ref{lst:classic} приведена реализация классического алгоритма умножения двух матриц.
+
+\begin{lstinputlisting}[
+	label={lst:classic},
+	caption={Классический алгоритм},
+	]{../src/lab_02/classic.cpp}
+\end{lstinputlisting}
+
+В листингe \ref{lst:winograd} приведена реализация алгоритма Винограда умножения двух матриц.
+
+Реализация оптимизированного алгоритма Винограда идентична реализации \textit{обычного} алгоритма Винограда, за исключением замены операции умножения на 2 на побитовый сдвиг и предвычисления \code{half\_m = m / 2}.
+
+В этом методе переменная \code{optimized} отвечает за то, какую реализацию использовать.
+\begin{equation}
+	\label{for:opt}
+	mode =
+	\begin{cases}
+		\text{алгоритм Винограда}, & \text{optimized = 0}\\
+		\text{оптимизированный алгоритм Винограда}, & \text{иначе.}
+	\end{cases}
+\end{equation}
+
+\newpage
+
+\begin{lstinputlisting}[
+	label={lst:winograd},
+	caption={Алгоритм Винограда},
+	]{../src/lab_02/winograd.cpp}
+\end{lstinputlisting}
+
+\newpage 
+
+\begin{lstinputlisting}[
+	label={lst:winograd2},
+	caption={продолжение листинга \ref{lst:winograd}},
+	]{../src/lab_02/winograd2.cpp}
+\end{lstinputlisting}
+
+\newpage
+
+В листингe \ref{lst:strassen} приведена реализация алгоритма Штрассена умножения двух матриц.
+
+\begin{lstinputlisting}[
+	label={lst:strassen},
+	caption={Алгоритм Штрассена},
+	]{../src/lab_02/strassen.cpp}
+\end{lstinputlisting}
+
+\newpage
+
+\begin{lstinputlisting}[
+	label={lst:strassen2},
+	caption={продолжение листинга \ref{lst:strassen}},
+	]{../src/lab_02/strassen2.cpp}
+\end{lstinputlisting}
