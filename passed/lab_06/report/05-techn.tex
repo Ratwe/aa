@@ -1,0 +1,74 @@
+\section{Технологическая часть}
+В данном разделе приведены требования к программному обеспечению, средства реализации и листинги кода.
+
+\subsection{Требования к ПО}
+На вход подаётся матрица стоимостей.
+На выходе требуется получить минимальный путь --- последовательность вершин, которые необходимо посетить.
+Т.к. по варианту необходимо найти Гамильтонов путь, первая и последняя вершина в последовательности всегда должна совпадать.
+
+\subsection{Средства реализации}
+
+В качестве языка программирования для реализации лабораторной работы был выбран Python.
+Данный выбор обусловлен наличием библиотеки $time$~\cite{time} для замера времени выполнения алгоритмов.
+
+\subsection{Сведения о модулях программы}
+Программа состоит из следующих программных модулей:
+\begin{enumerate}[label={\arabic*)}]
+	\item matrix.py --- модуль с функциями обработки матриц;
+	\item ant.py --- модуль с реализацией муравьиного алгоритма;
+	\item bruteforce.py --- модуль с реализацией метода полного перебора;
+	\item main.py --- главный модуль с меню и функцией параметризации;
+	\item time.py --- модуль замера времени алгоритмов;
+	\item plot.py --- модуль создания графического представления значений.
+\end{enumerate}
+
+\newpage
+\subsection{Реализация алгоритмов}
+
+В листингe \ref{lst:bruteforce} приведена реализация метода полного перебора.
+
+\begin{lstinputlisting}[
+	label={lst:bruteforce},
+	caption={Полный перебор},
+	]{../src/lab_06/bruteforce.py}
+\end{lstinputlisting}
+
+\newpage
+В листингe \ref{lst:ant1} приведена реализация муравьиного алгоритма.
+
+\begin{lstinputlisting}[
+	label={lst:ant1},
+	caption={Муравьиный алгоритм},
+	firstline=1,
+	lastline=37
+	]{../src/lab_06/ant_nc.py}
+\end{lstinputlisting}
+
+\newpage
+\begin{lstinputlisting}[
+	label={lst:ant2},
+	caption={продолжение листинга \ref{lst:ant1}},
+	firstline=38,
+	lastline=74
+	]{../src/lab_06/ant_nc.py}
+\end{lstinputlisting}
+
+\newpage
+\begin{lstinputlisting}[
+	label={lst:ant3},
+	caption={продолжение листинга \ref{lst:ant2}},
+	firstline=75,
+	lastline=89
+	]{../src/lab_06/ant_nc.py}
+\end{lstinputlisting}
+
+\newpage
+\begin{lstinputlisting}[
+	label={lst:ant4},
+	caption={продолжение листинга \ref{lst:ant3}},
+	firstline=92,
+	lastline=113
+	]{../src/lab_06/ant_nc.py}
+\end{lstinputlisting}
+
+\newpage

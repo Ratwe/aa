@@ -1,0 +1,105 @@
+\section{Технологическая часть}
+В данном разделе приведены требования к программному обеспечению, средства реализации и листинги кода.
+
+\subsection{Средства реализации}
+В качестве языка программирования для реализации лабораторной работы был выбран C++.
+Данный выбор обусловлен наличием функционала для работы с потоками thread и библиотекой chrono для замера времени выполнения алгоритмов.
+
+\subsection{Сведения о модулях программы}
+Программа состоит из следующих программных модулей:
+\begin{itemize}
+	\item main.cpp --- файл, содержащий меню и точку входа в программу;
+	\item time.cpp --- модуль замера времени выполнения алгоритмов;
+	\item prefix.cpp --- модуль расчёта массива префиксов;
+	\item KMP.cpp --- модуль реализации алгоритма КМП;
+	\item standart.cpp --- модуль реализации стандартного алгоритма;
+	\item generate.cpp --- модуль генерации данных;
+	\item conveyor.cpp --- модуль реализации конвейерной обработки;
+	\item соответствующие им файлы заголовков;
+	\item plot.py --- модуль создания графического представления значений.
+\end{itemize}
+
+\newpage
+\subsection{Реализация алгоритмов}
+
+В листингe \ref{lst:standart} приведена реализация стандартного алгоритма поиска подстроки в строке.
+
+\begin{lstinputlisting}[
+	label={lst:standart},
+	caption={Стандартный алгоритм},
+	firstline=11,
+	lastline=26
+	]{../src/lab_05/standart.cpp}
+\end{lstinputlisting}
+
+В листингe \ref{lst:prefix} приведена реализация алгоритма расчета префиксного массива, необходимого для алгоритма КМП.
+
+\begin{lstinputlisting}[
+	label={lst:prefix},
+	caption={Расчет префиксного массива},
+	firstline=8,
+	lastline=23
+	]{../src/lab_05/prefix.cpp}
+\end{lstinputlisting}
+
+В листингe \ref{lst:KMP} приведена реализация алгоритма КМП поиска подстроки в строке.
+
+\begin{lstinputlisting}[
+	label={lst:KMP},
+	caption={Алгоритм КМП},
+	firstline=11,
+	lastline=33
+	]{../src/lab_05/KMP.cpp}
+\end{lstinputlisting}
+\newpage
+
+В листингe \ref{lst:linear} приведена последовательная реализация конвейера.
+
+\begin{lstinputlisting}[
+	label={lst:linear},
+	caption={Последовательный конвейер},
+	firstline=14,
+	lastline=26
+	]{../src/lab_05/conveyor.cpp}
+\end{lstinputlisting}
+
+В листингах \ref{lst:parallel} и \ref{lst:parallel2} приведена параллельная реализация конвейера.
+
+\begin{lstinputlisting}[
+	label={lst:parallel},
+	caption={Параллельный конвейер},
+	firstline=28,
+	lastline=45
+	]{../src/lab_05/conveyor.cpp}
+\end{lstinputlisting}
+
+\newpage
+
+\begin{lstinputlisting}[
+	label={lst:parallel2},
+	caption={Продолжение листинга \ref{lst:parallel}},
+	firstline=47,
+	lastline=66
+	]{../src/lab_05/conveyor.cpp}
+\end{lstinputlisting}
+
+В листингe \ref{lst:sub} приведена реализация алгоритма генерации искомой подстроки.
+
+\begin{lstinputlisting}[
+	label={lst:sub},
+	caption={Генерация подстроки},
+	firstline=7,
+	lastline=18
+	]{../src/lab_05/generate.cpp}
+\end{lstinputlisting}
+
+\newpage
+В листингe \ref{lst:str} приведена реализация алгоритма генерации строки.
+
+\begin{lstinputlisting}[
+	label={lst:str},
+	caption={Генерация строки},
+	firstline=20,
+	lastline=40
+	]{../src/lab_05/generate.cpp}
+\end{lstinputlisting}

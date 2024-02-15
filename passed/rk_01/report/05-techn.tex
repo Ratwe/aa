@@ -1,0 +1,72 @@
+\section{Технологическая часть}
+В данном разделе приведены требования к программному обеспечению, средства реализации и листинги кода.
+
+\subsection{Средства реализации}
+В качестве языка программирования для реализации лабораторной работы был выбран C++.
+Данный выбор обусловлен наличием функционала для работы с потоками thread и библиотекой chrono для замера времени выполнения алгоритмов.
+
+\subsection{Сведения о модулях программы}
+Программа состоит из следующих программных модулей:
+\begin{itemize}
+	\item main.cpp --- файл, содержащий меню и точку входа в программу;
+	\item time.cpp --- модуль замера времени выполнения алгоритмов;
+	\item standart.cpp --- модуль реализации стандартного алгоритма;
+	\item generate.cpp --- модуль генерации данных;
+	\item implementation.cpp --- модуль реализации двух видов алгоритма;
+	\item соответствующие им файлы заголовков;
+	\item plot.py --- модуль создания графического представления значений.
+\end{itemize}
+
+\newpage
+\subsection{Реализация алгоритмов}
+
+В листингe \ref{lst:standart} приведена реализация стандартного алгоритма поиска подстроки в строке.
+
+\begin{lstinputlisting}[
+	label={lst:standart},
+	caption={Стандартный алгоритм},
+	firstline=11,
+	lastline=26
+	]{../src/rk_01/standart.cpp}
+\end{lstinputlisting}
+
+В листингах \ref{lst:linear} приведена последовательная реализация программы.
+
+\begin{lstinputlisting}[
+	label={lst:linear},
+	caption={Последовательная реализация},
+	firstline=14,
+	lastline=23
+	]{../src/rk_01/implementation.cpp}
+\end{lstinputlisting}
+
+\newpage
+В листингах \ref{lst:parallel} приведена параллельная реализация программы.
+
+\begin{lstinputlisting}[
+	label={lst:parallel},
+	caption={Параллельная реализация},
+	firstline=25
+	]{../src/rk_01/implementation.cpp}
+\end{lstinputlisting}
+
+В листингe \ref{lst:sub} приведена реализация алгоритма генерации искомой подстроки.
+
+\begin{lstinputlisting}[
+	label={lst:sub},
+	caption={Генерация подстроки},
+	firstline=7,
+	lastline=14
+	]{../src/rk_01/generate.cpp}
+\end{lstinputlisting}
+
+\newpage
+В листингe \ref{lst:str} приведена реализация алгоритма генерации строки.
+
+\begin{lstinputlisting}[
+	label={lst:str},
+	caption={Генерация строки},
+	firstline=16,
+	lastline=36
+	]{../src/rk_01/generate.cpp}
+\end{lstinputlisting}
